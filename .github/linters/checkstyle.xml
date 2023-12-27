@@ -68,9 +68,6 @@
         <!-- http://checkstyle.sourceforge.net/config_design.html                        -->
         <!-- =========================================================================== -->
         <!-- SPECIAL HACK FOR NON-STATIC PUBIC FINAL VARIABLE -->
-        <module name="VisibilityModifier">
-            <property name="publicMemberPattern" value="^SLOPE_ORDER$"/>
-        </module>
         <!-- <module name="FinalClass"/> -->
         <module name="InterfaceIsType"/>
         <module name="MutableException"/>
@@ -90,12 +87,6 @@
         </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
-        <module name="MagicNumber">
-            <property name="tokens"
-                      value="NUM_DOUBLE, NUM_FLOAT, NUM_INT, NUM_LONG"/>
-            <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2, 100, 11.5"/>
-            <property name="ignoreHashCodeMethod" value="true"/>
-        </module>
         <module name="MissingSwitchDefault"/>
         <module name="ModifiedControlVariable"/>
         <module name="SimplifyBooleanExpression"/>
